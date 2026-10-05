@@ -49,4 +49,11 @@ public struct Channel: Identifiable, Hashable, Sendable {
         let minor = parts.count > 1 ? (Int(parts[1]) ?? 0) : 0
         return major * 100 + minor
     }
+
+    /// Build a stream URL for this channel on a tuner with the given IP.
+    /// - Parameter tunerIP: The IP address of the HDHomeRun tuner.
+    /// - Returns: A fully-qualified HTTP URL for the stream.
+    public func streamURL(tunerIP: String) -> URL {
+        URL(string: "http://\(tunerIP):5004/auto/v\(number)")!
+    }
 }
