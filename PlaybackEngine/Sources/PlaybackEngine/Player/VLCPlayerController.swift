@@ -8,13 +8,15 @@ import Core
 /// deinterlacing, and state publishing.
 @MainActor
 public final class VLCPlayerController: NSObject, PlayerController, @unchecked Sendable {
-    private let mediaPlayer: VLCMediaPlayer
+    private let _mediaPlayer: VLCMediaPlayer
     private var stateContinuation: AsyncStream<PlaybackState>.Continuation?
     private var _state: PlaybackState = .idle
     private let _stateUpdates: AsyncStream<PlaybackState>
 
+    public var mediaPlayer: VLCMediaPlayer { _mediaPlayer }
+
     public override init() {
-        self.mediaPlayer = VLCMediaPlayer()
+        self._mediaPlayer = VLCMediaPlayer()
 
         // Set up state publishing
         let (stream, continuation) = AsyncStream<PlaybackState>.makeStream()
@@ -44,48 +46,48 @@ public final class VLCPlayerController: NSObject, PlayerController, @unchecked S
 
         // Create media from URL
         let media = VLCMedia(url: url)
-        mediaPlayer.media = media
+        _mediaPlayer.media = media
 
         // Apply deinterlacing mode
         applyDeinterlacing(deinterlacing)
 
         // Start playback
-        mediaPlayer.play()
+        _mediaPlayer.play()
 
         // VLC will transition through states via KVO
     }
 
     /// Start or resume playback.
     public func play() async {
-        mediaPlayer.play()
+        _mediaPlayer.play()
     }
 
     /// Pause playback.
     public func pause() async {
-        mediaPlayer.pause()
+        _mediaPlayer.pause()
     }
 
     /// Stop playback and release resources.
     public func stop() async {
-        mediaPlayer.stop()
+        _mediaPlayer.stop()
         updateState(.stopped)
     }
 
     /// Seek to a specific time in the stream.
     /// - Parameter time: Time offset in seconds.
     public func seek(to time: TimeInterval) async {
-        mediaPlayer.setTime(time)
+        _mediaPlayer.setTime(time)
     }
 
     private func setupObservation() {
         // Observe isPlaying, isPaused, isEnded via KVO
-        mediaPlayer.addObserver(self, forKeyPath: "isPlaying", options: [.new], context: nil)
-        mediaPlayer.addObserver(self, forKeyPath: "isPaused", options: [.new], context: nil)
-        mediaPlayer.addObserver(self, forKeyPath: "isEnded", options: [.new], context: nil)
+        _mediaPlayer.addObserver(self, forKeyPath: "isPlaying", options: [.new], context: nil)
+        _mediaPlayer.addObserver(self, forKeyPath: "isPaused", options: [.new], context: nil)
+        _mediaPlayer.addObserver(self, forKeyPath: "isEnded", options: [.new], context: nil)
     }
 
     public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        guard object as AnyObject? === mediaPlayer else { return }
+        guard object as AnyObject? === _mediaPlayer else { return }
         Task { @MainActor in
             handleStateChange()
         }
@@ -95,15 +97,15 @@ public final class VLCPlayerController: NSObject, PlayerController, @unchecked S
     private func handleStateChange() {
         let newState: PlaybackState
 
-        if mediaPlayer.isEnded {
+        if _mediaPlayer.isEnded {
             newState = .stopped
-        } else if mediaPlayer.isPlaying {
+        } else if _mediaPlayer.isPlaying {
             newState = .playing
-        } else if mediaPlayer.isPaused {
+        } else if _mediaPlayer.isPaused {
             newState = .paused
         } else {
             // Check if media is loaded/buffering
-            if mediaPlayer.media != nil {
+            if _mediaPlayer.media != nil {
                 newState = .buffering
             } else {
                 newState = .idle

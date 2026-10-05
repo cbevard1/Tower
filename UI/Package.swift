@@ -12,7 +12,8 @@ let package = Package(
     dependencies: [
         .package(path: "../Core"),
         .package(path: "../TunerClient"),
-        .package(path: "../PlaybackEngine")
+        .package(path: "../PlaybackEngine"),
+        .package(path: "../MockVLCKit")
     ],
     targets: [
         .target(
@@ -26,7 +27,7 @@ let package = Package(
         ),
         .testTarget(
             name: "UITests",
-            dependencies: ["UI", "Core", "TunerClient", "PlaybackEngine"],
+            dependencies: ["UI", "Core", "TunerClient", "MockVLCKit"],
             path: "Tests/UITests"
         ),
     ]
