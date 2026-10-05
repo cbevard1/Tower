@@ -1,0 +1,89 @@
+{
+  "": {
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/primary.swiftdeps"
+  },
+  "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/DI/Container.swift": {
+    "dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/Container.d",
+    "object": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/Container.swift.o",
+    "swiftmodule": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/Container~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/Container.swiftdeps",
+    "diagnostics": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/Container.dia"
+  },
+  "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Models/Channel.swift": {
+    "dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/Channel.d",
+    "object": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/Channel.swift.o",
+    "swiftmodule": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/Channel~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/Channel.swiftdeps",
+    "diagnostics": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/Channel.dia"
+  },
+  "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Models/DeinterlacingMode.swift": {
+    "dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/DeinterlacingMode.d",
+    "object": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/DeinterlacingMode.swift.o",
+    "swiftmodule": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/DeinterlacingMode~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/DeinterlacingMode.swiftdeps",
+    "diagnostics": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/DeinterlacingMode.dia"
+  },
+  "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Models/GuideEntry.swift": {
+    "dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/GuideEntry.d",
+    "object": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/GuideEntry.swift.o",
+    "swiftmodule": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/GuideEntry~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/GuideEntry.swiftdeps",
+    "diagnostics": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/GuideEntry.dia"
+  },
+  "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Models/Tuner.swift": {
+    "dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/Tuner.d",
+    "object": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/Tuner.swift.o",
+    "swiftmodule": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/Tuner~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/Tuner.swiftdeps",
+    "diagnostics": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/Tuner.dia"
+  },
+  "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Protocols/ChannelMatcher.swift": {
+    "dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/ChannelMatcher.d",
+    "object": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/ChannelMatcher.swift.o",
+    "swiftmodule": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/ChannelMatcher~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/ChannelMatcher.swiftdeps",
+    "diagnostics": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/ChannelMatcher.dia"
+  },
+  "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Protocols/GuideProvider.swift": {
+    "dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/GuideProvider.d",
+    "object": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/GuideProvider.swift.o",
+    "swiftmodule": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/GuideProvider~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/GuideProvider.swiftdeps",
+    "diagnostics": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/GuideProvider.dia"
+  },
+  "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Protocols/GuideRepository.swift": {
+    "dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/GuideRepository.d",
+    "object": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/GuideRepository.swift.o",
+    "swiftmodule": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/GuideRepository~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/GuideRepository.swiftdeps",
+    "diagnostics": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/GuideRepository.dia"
+  },
+  "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Protocols/LineupProvider.swift": {
+    "dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/LineupProvider.d",
+    "object": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/LineupProvider.swift.o",
+    "swiftmodule": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/LineupProvider~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/LineupProvider.swiftdeps",
+    "diagnostics": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/LineupProvider.dia"
+  },
+  "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Protocols/PlayerController.swift": {
+    "dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/PlayerController.d",
+    "object": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/PlayerController.swift.o",
+    "swiftmodule": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/PlayerController~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/PlayerController.swiftdeps",
+    "diagnostics": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/PlayerController.dia"
+  },
+  "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Protocols/StreamURLBuilder.swift": {
+    "dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/StreamURLBuilder.d",
+    "object": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/StreamURLBuilder.swift.o",
+    "swiftmodule": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/StreamURLBuilder~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/StreamURLBuilder.swiftdeps",
+    "diagnostics": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/StreamURLBuilder.dia"
+  },
+  "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Protocols/TunerDiscoverer.swift": {
+    "dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/TunerDiscoverer.d",
+    "object": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/TunerDiscoverer.swift.o",
+    "swiftmodule": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/TunerDiscoverer~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/TunerDiscoverer.swiftdeps",
+    "diagnostics": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/.build/x86_64-apple-macosx/debug/Core.build/TunerDiscoverer.dia"
+  }
+}

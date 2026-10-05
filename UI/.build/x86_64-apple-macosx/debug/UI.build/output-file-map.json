@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/UI/.build/x86_64-apple-macosx/debug/UI.build/primary.swiftdeps"
+  },
+  "/Volumes/Users_Mount/Users/cbevard1/git/Tower/UI/Sources/UI/UI.swift": {
+    "dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/UI/.build/x86_64-apple-macosx/debug/UI.build/UI.d",
+    "object": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/UI/.build/x86_64-apple-macosx/debug/UI.build/UI.swift.o",
+    "swiftmodule": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/UI/.build/x86_64-apple-macosx/debug/UI.build/UI~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/UI/.build/x86_64-apple-macosx/debug/UI.build/UI.swiftdeps",
+    "diagnostics": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/UI/.build/x86_64-apple-macosx/debug/UI.build/UI.dia"
+  }
+}

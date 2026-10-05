@@ -1,0 +1,12 @@
+/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/DI/Container.swift
+/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Models/Channel.swift
+/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Models/DeinterlacingMode.swift
+/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Models/GuideEntry.swift
+/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Models/Tuner.swift
+/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Protocols/ChannelMatcher.swift
+/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Protocols/GuideProvider.swift
+/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Protocols/GuideRepository.swift
+/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Protocols/LineupProvider.swift
+/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Protocols/PlayerController.swift
+/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Protocols/StreamURLBuilder.swift
+/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core/Sources/Core/Protocols/TunerDiscoverer.swift

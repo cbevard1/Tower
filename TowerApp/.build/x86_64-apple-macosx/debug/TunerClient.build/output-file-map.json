@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/TowerApp/.build/x86_64-apple-macosx/debug/TunerClient.build/primary.swiftdeps"
+  },
+  "/Volumes/Users_Mount/Users/cbevard1/git/Tower/TunerClient/Sources/TunerClient/TunerClient.swift": {
+    "dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/TowerApp/.build/x86_64-apple-macosx/debug/TunerClient.build/TunerClient.d",
+    "object": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/TowerApp/.build/x86_64-apple-macosx/debug/TunerClient.build/TunerClient.swift.o",
+    "swiftmodule": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/TowerApp/.build/x86_64-apple-macosx/debug/TunerClient.build/TunerClient~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/TowerApp/.build/x86_64-apple-macosx/debug/TunerClient.build/TunerClient.swiftdeps",
+    "diagnostics": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/TowerApp/.build/x86_64-apple-macosx/debug/TunerClient.build/TunerClient.dia"
+  }
+}

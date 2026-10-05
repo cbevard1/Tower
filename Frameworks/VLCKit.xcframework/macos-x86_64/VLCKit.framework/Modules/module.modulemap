@@ -1,0 +1,5 @@
+framework module VLCKit {
+  umbrella header "VLCKit.h"
+  export *
+  module * { export * }
+}

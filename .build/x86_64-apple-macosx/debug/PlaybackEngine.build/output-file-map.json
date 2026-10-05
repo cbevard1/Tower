@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/.build/x86_64-apple-macosx/debug/PlaybackEngine.build/primary.swiftdeps"
+  },
+  "/Volumes/Users_Mount/Users/cbevard1/git/Tower/PlaybackEngine/Sources/PlaybackEngine/PlaybackEngine.swift": {
+    "dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/.build/x86_64-apple-macosx/debug/PlaybackEngine.build/PlaybackEngine.d",
+    "object": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/.build/x86_64-apple-macosx/debug/PlaybackEngine.build/PlaybackEngine.swift.o",
+    "swiftmodule": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/.build/x86_64-apple-macosx/debug/PlaybackEngine.build/PlaybackEngine~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/.build/x86_64-apple-macosx/debug/PlaybackEngine.build/PlaybackEngine.swiftdeps",
+    "diagnostics": "/Volumes/Users_Mount/Users/cbevard1/git/Tower/.build/x86_64-apple-macosx/debug/PlaybackEngine.build/PlaybackEngine.dia"
+  }
+}

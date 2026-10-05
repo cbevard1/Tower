@@ -1,0 +1,72 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "playbackengine",
+          "kind" : "fileSystem",
+          "location" : "/Volumes/Users_Mount/Users/cbevard1/git/Tower/PlaybackEngine",
+          "name" : "PlaybackEngine"
+        },
+        "path" : "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Frameworks/VLCKit.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "VLCKit"
+      }
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "core",
+          "kind" : "fileSystem",
+          "location" : "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core",
+          "name" : "Core"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Volumes/Users_Mount/Users/cbevard1/git/Tower/Core"
+        },
+        "subpath" : "core"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "playbackengine",
+          "kind" : "fileSystem",
+          "location" : "/Volumes/Users_Mount/Users/cbevard1/git/Tower/PlaybackEngine",
+          "name" : "PlaybackEngine"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Volumes/Users_Mount/Users/cbevard1/git/Tower/PlaybackEngine"
+        },
+        "subpath" : "playbackengine"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "tunerclient",
+          "kind" : "fileSystem",
+          "location" : "/Volumes/Users_Mount/Users/cbevard1/git/Tower/TunerClient",
+          "name" : "TunerClient"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Volumes/Users_Mount/Users/cbevard1/git/Tower/TunerClient"
+        },
+        "subpath" : "tunerclient"
+      }
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}

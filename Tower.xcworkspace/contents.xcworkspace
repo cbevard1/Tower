@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <!-- Root group -->
+   <FileRef
+      location = "group:">
+   </FileRef>
+
+   <!-- Local SwiftPM package references -->
+   <FileRef
+      location = "group:Core/Package.swift">
+   </FileRef>
+   <FileRef
+      location = "group:TunerClient/Package.swift">
+   </FileRef>
+   <FileRef
+      location = "group:PlaybackEngine/Package.swift">
+   </FileRef>
+   <FileRef
+      location = "group:UI/Package.swift">
+   </FileRef>
+   <FileRef
+      location = "group:TowerApp/Package.swift">
+   </FileRef>
+</Workspace>

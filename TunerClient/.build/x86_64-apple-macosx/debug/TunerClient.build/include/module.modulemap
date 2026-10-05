@@ -1,0 +1,3 @@
+module TunerClient {
+    header "/Volumes/Users_Mount/Users/cbevard1/git/Tower/TunerClient/.build/x86_64-apple-macosx/debug/TunerClient.build/include/TunerClient-Swift.h"
+}
