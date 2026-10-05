@@ -1,0 +1,21 @@
+# Build artifacts
+.build/
+*.build/
+DerivedData/
+
+# Xcode
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcshareddata/
+*.xcodeproj/project.xcworkspace/
+
+# SwiftPM
+Packages/
+Package.resolved
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
