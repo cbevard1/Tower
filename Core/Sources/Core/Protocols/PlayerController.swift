@@ -3,7 +3,7 @@ import Foundation
 /// Playback state communicated by a `PlayerController`.
 ///
 /// Used with `PlayerController.stateUpdates` to notify UI layers.
-public enum PlaybackState: Sendable {
+public enum PlaybackState: Sendable, Equatable {
     case idle
     case loading
     case buffering
@@ -11,6 +11,22 @@ public enum PlaybackState: Sendable {
     case paused
     case stopped
     case error(String)
+
+    public static func == (lhs: PlaybackState, rhs: PlaybackState) -> Bool {
+        switch (lhs, rhs) {
+        case (.idle, .idle),
+             (.loading, .loading),
+             (.buffering, .buffering),
+             (.playing, .playing),
+             (.paused, .paused),
+             (.stopped, .stopped):
+            return true
+        case (.error(let lhsMsg), .error(let rhsMsg)):
+            return lhsMsg == rhsMsg
+        default:
+            return false
+        }
+    }
 }
 
 /// Controls media playback of an HTTP stream.
@@ -18,6 +34,10 @@ public enum PlaybackState: Sendable {
 /// Conforming types (typically a VLCKit wrapper) expose play, pause,
 /// seek, and deinterlacing controls. State updates are published
 /// for SwiftUI bindings.
+///
+/// All playback operations run on the main actor since they interact
+/// with VLCKit which requires main-thread execution.
+@MainActor
 public protocol PlayerController: Sendable {
     /// Open and begin preparing a stream URL.
     /// - Parameters:

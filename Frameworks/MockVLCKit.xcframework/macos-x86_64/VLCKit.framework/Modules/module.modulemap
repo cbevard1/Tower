@@ -1,0 +1,5 @@
+framework module VLCKit {
+    umbrella header "MockVLCKit.h"
+    export *
+    module * { export * }
+}

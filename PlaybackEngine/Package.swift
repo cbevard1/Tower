@@ -17,6 +17,10 @@ let package = Package(
             name: "VLCKit",
             path: "../Frameworks/VLCKit.xcframework"
         ),
+        .binaryTarget(
+            name: "MockVLCKit",
+            path: "../Frameworks/MockVLCKit.xcframework"
+        ),
         .target(
             name: "PlaybackEngine",
             dependencies: [
@@ -27,7 +31,7 @@ let package = Package(
         ),
         .testTarget(
             name: "PlaybackEngineTests",
-            dependencies: ["PlaybackEngine", "Core"],
+            dependencies: ["Core", "MockVLCKit"],
             path: "Tests/PlaybackEngineTests"
         ),
     ]
