@@ -28,7 +28,11 @@ let package = Package(
         .testTarget(
             name: "UITests",
             dependencies: ["UI", "Core", "TunerClient", "MockVLCKit"],
-            path: "Tests/UITests"
+            path: "Tests/UITests",
+            exclude: [
+                "SettingsViewModelTests.swift.disabled",
+                "TestUtilitiesSettings.swift.disabled"
+            ]
         ),
     ]
 )

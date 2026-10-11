@@ -4,64 +4,6 @@ import Foundation
 @testable import Core
 @testable import TunerClient
 
-/// Mock TunerDiscoverer for testing
-final class MockTunerDiscoverer: TunerDiscoverer, @unchecked Sendable {
-    var tunersToReturn: [Tuner] = []
-    var shouldThrow = false
-
-    func discover() async throws -> [Tuner] {
-        if shouldThrow {
-            throw NSError(domain: "TestError", code: 1, userInfo: [NSLocalizedDescriptionKey: "Discovery failed"])
-        }
-        return tunersToReturn
-    }
-}
-
-/// Mock LineupProvider for testing
-final class MockLineupProvider: LineupProvider, @unchecked Sendable {
-    var channelsToReturn: [Channel] = []
-    var shouldThrow = false
-
-    func fetchLineup(for tuner: Tuner) async throws -> [Channel] {
-        if shouldThrow {
-            throw NSError(domain: "TestError", code: 1, userInfo: [NSLocalizedDescriptionKey: "Lineup fetch failed"])
-        }
-        return channelsToReturn
-    }
-}
-
-/// Mock PlayerController for testing
-@MainActor
-final class MockPlayerController: PlayerController {
-    var state: PlaybackState = .idle
-    var lastOpenedURL: URL?
-    var lastDeinterlacingMode: DeinterlacingMode?
-    let stateContinuation: AsyncStream<PlaybackState>.Continuation
-    let stateStream: AsyncStream<PlaybackState>
-
-    init() {
-        let (stream, continuation) = AsyncStream<PlaybackState>.makeStream()
-        self.stateStream = stream
-        self.stateContinuation = continuation
-    }
-
-    var stateUpdates: AsyncStream<PlaybackState> { stateStream }
-
-    func open(url: URL, deinterlacing: DeinterlacingMode) async throws {
-        lastOpenedURL = url
-        lastDeinterlacingMode = deinterlacing
-        state = .loading
-        stateContinuation.yield(state)
-        state = .playing
-        stateContinuation.yield(state)
-    }
-
-    func play() async { state = .playing; stateContinuation.yield(state) }
-    func pause() async { state = .paused; stateContinuation.yield(state) }
-    func stop() async { state = .stopped; stateContinuation.yield(state) }
-    func seek(to time: TimeInterval) async {}
-}
-
 @Suite("ChannelsViewModel Tests")
 @MainActor
 struct ChannelsViewModelTests {
