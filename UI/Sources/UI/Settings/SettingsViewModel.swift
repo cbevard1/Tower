@@ -1,6 +1,7 @@
 import SwiftUI
 import Core
 import TunerClient
+import GuideIngestion
 
 /// View model for the Settings screen
 @MainActor
@@ -49,6 +50,28 @@ public final class SettingsViewModel {
         set { defaults.set(newValue, forKey: "bufferSize") }
     }
 
+    // MARK: - Guide Settings
+
+    public var xmltvURL: String {
+        get { defaults.string(forKey: "xmltvURL") ?? "" }
+        set { defaults.set(newValue, forKey: "xmltvURL") }
+    }
+
+    public var autoRefreshInterval: Int {
+        get { defaults.object(forKey: "autoRefreshInterval") as? Int ?? 12 }
+        set { defaults.set(newValue, forKey: "autoRefreshInterval") }
+    }
+
+    public var lastGuideRefresh: Date? {
+        get {
+            if let interval = defaults.object(forKey: "lastGuideRefresh") as? TimeInterval {
+                return Date(timeIntervalSince1970: interval)
+            }
+            return nil
+        }
+        set { defaults.set(newValue?.timeIntervalSince1970, forKey: "lastGuideRefresh") }
+    }
+
     // MARK: - Initialization
 
     public init(
@@ -61,6 +84,9 @@ public final class SettingsViewModel {
         // Register defaults
         if defaults.object(forKey: "autoDiscoverTuners") == nil {
             defaults.set(true, forKey: "autoDiscoverTuners")
+        }
+        if defaults.object(forKey: "autoRefreshInterval") == nil {
+            defaults.set(12, forKey: "autoRefreshInterval")
         }
     }
 

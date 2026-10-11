@@ -1,6 +1,7 @@
 import SwiftUI
 import Core
 import TunerClient
+import GuideIngestion
 
 /// Main settings screen
 public struct SettingsView: View {
@@ -30,7 +31,9 @@ public struct SettingsView: View {
             case .playback:
                 PlaybackSettingsView(viewModel: viewModel)
             case .guide:
-                GuideSettingsView(viewModel: viewModel)
+                GuideSettingsView(viewModel: viewModel) {
+                    // Trigger refresh
+                }
             case .advanced:
                 AdvancedSettingsView(viewModel: viewModel)
             }
@@ -59,28 +62,6 @@ public struct SettingsView: View {
             case .advanced: return "gearshape.2"
             }
         }
-    }
-}
-
-/// Placeholder for Guide settings
-private struct GuideSettingsView: View {
-    @Bindable var viewModel: SettingsViewModel
-
-    var body: some View {
-        Form {
-            Section("Guide Data Source") {
-                TextField("XMLTV URL", text: .constant(""))
-                    .textFieldStyle(.roundedBorder)
-                Button("Refresh Now") { }
-                Picker("Auto-refresh", selection: .constant(0)) {
-                    Text("Every 6 hours").tag(0)
-                    Text("Every 12 hours").tag(1)
-                    Text("Every 24 hours").tag(2)
-                    Text("Manual only").tag(3)
-                }
-            }
-        }
-        .formStyle(.grouped)
     }
 }
 
