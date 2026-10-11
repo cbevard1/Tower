@@ -13,7 +13,8 @@ let package = Package(
         .package(path: "../Core"),
         .package(path: "../TunerClient"),
         .package(path: "../PlaybackEngine"),
-        .package(path: "../UI")
+        .package(path: "../UI"),
+        .package(path: "../MockVLCKit")
     ],
     targets: [
         .executableTarget(
@@ -22,7 +23,8 @@ let package = Package(
                 .product(name: "Core", package: "Core"),
                 .product(name: "TunerClient", package: "TunerClient"),
                 .product(name: "PlaybackEngine", package: "PlaybackEngine"),
-                .product(name: "UI", package: "UI")
+                .product(name: "UI", package: "UI"),
+                "MockVLCKit"
             ],
             path: "Sources/TowerApp",
             resources: [

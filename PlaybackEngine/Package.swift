@@ -10,28 +10,21 @@ let package = Package(
         .library(name: "PlaybackEngine", targets: ["PlaybackEngine"])
     ],
     dependencies: [
-        .package(path: "../Core")
+        .package(path: "../Core"),
+        .package(path: "../MockVLCKit")
     ],
     targets: [
-        .binaryTarget(
-            name: "VLCKit",
-            path: "../Frameworks/VLCKit.xcframework"
-        ),
-        .binaryTarget(
-            name: "MockVLCKit",
-            path: "../Frameworks/MockVLCKit.xcframework"
-        ),
         .target(
             name: "PlaybackEngine",
             dependencies: [
                 .product(name: "Core", package: "Core"),
-                "VLCKit"
+                "MockVLCKit"
             ],
             path: "Sources/PlaybackEngine"
         ),
         .testTarget(
             name: "PlaybackEngineTests",
-            dependencies: ["Core", "MockVLCKit"],
+            dependencies: ["PlaybackEngine", "Core", "MockVLCKit"],
             path: "Tests/PlaybackEngineTests"
         ),
     ]
