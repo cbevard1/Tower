@@ -8,7 +8,12 @@ public final class DatabaseManager: Sendable {
 
     public init(inMemory: Bool = false) throws {
         if inMemory {
-            self.dbQueue = try DatabaseQueue()
+            // Use shared cache for in-memory database to allow multiple connections
+            var config = Configuration()
+            config.prepareDatabase { db in
+                try db.execute(sql: "PRAGMA cache_size = -32768") // 32MB cache
+            }
+            self.dbQueue = try DatabaseQueue(configuration: config)
         } else {
             let urls = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)
             let appSupportURL = urls[0].appendingPathComponent("Tower", isDirectory: true)
